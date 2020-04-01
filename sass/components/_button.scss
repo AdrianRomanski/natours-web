@@ -67,7 +67,7 @@
     &:link,
     &:visited {
         font-size: $default-font-size;
-        color: $main-color;
+        color: $main-color-light;
         display: inline-block;
         text-decoration: none;
         border-bottom: 1px solid $main-color;
@@ -76,7 +76,7 @@
     }
 
     &:hover {
-        background-color: $main-color;
+        background-color: $main-color-light;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba(black, .15);
         transform: translateY(-2px);
