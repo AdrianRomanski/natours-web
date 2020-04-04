@@ -319,9 +319,6 @@ body {
 
 .card__side {
   height: 52rem;
-  color: white;
-  font-size: 2rem;
-  height: 50rem;
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
   position: absolute;
@@ -329,7 +326,7 @@ body {
   left: 0;
   width: 100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -337,11 +334,10 @@ body {
 }
 
 .card__side--front {
-  background-color: white;
+  background-color: #fff;
 }
 
 .card__side--back {
-  background-color: green;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -352,8 +348,8 @@ body {
 }
 
 .card__side--back-2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#55c57a), to(#28b485));
-  background-image: linear-gradient(to right bottom, #55c57a, #28b485);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 
 .card__side--back-3 {
@@ -382,26 +378,26 @@ body {
 }
 
 .card__picture--1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), url(/img/nat-5.jpg);
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(/img/nat-5.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), url(../img/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg);
 }
 
 .card__picture--2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#55c57a), to(#28b485)), url(/img/nat-6.jpg);
-  background-image: linear-gradient(to right bottom, #55c57a, #28b485), url(/img/nat-6.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485)), url(../img/nat-6.jpg);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg);
 }
 
 .card__picture--3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), url(/img/nat-7.jpg);
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(/img/nat-7.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), url(../img/nat-7.jpg);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg);
 }
 
 .card__heading {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 300;
   text-transform: uppercase;
   text-align: right;
-  color: white;
+  color: #fff;
   position: absolute;
   top: 12rem;
   right: 2rem;
@@ -420,8 +416,8 @@ body {
 }
 
 .card__heading-span--2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, 0.85)), to(rgba(40, 180, 133, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.85), rgba(40, 180, 133, 0.85));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.85)), to(rgba(40, 180, 133, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
 }
 
 .card__heading-span--3 {
@@ -443,26 +439,10 @@ body {
   text-align: center;
   font-size: 1.5rem;
   padding: 1rem;
-  margin-right: 4rem;
 }
 
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
-}
-
-.card__details--1 ul li {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.85)), to(rgba(255, 119, 48, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
-}
-
-.card__details--2 ul li {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, 0.85)), to(rgba(40, 180, 133, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.85), rgba(40, 180, 133, 0.85));
-}
-
-.card__details--3 ul li {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.85)), to(rgba(86, 67, 250, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
 }
 
 .card__cta {
@@ -477,8 +457,8 @@ body {
 
 .card__price-box {
   text-align: center;
-  margin-bottom: 8rem;
   color: #fff;
+  margin-bottom: 8rem;
 }
 
 .card__price-only {
@@ -489,6 +469,50 @@ body {
 .card__price-value {
   font-size: 6rem;
   font-weight: 100;
+}
+
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  .card {
+    height: auto;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+  .card__side {
+    height: auto;
+    position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .card__side--back {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .card:hover .card__side--front {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  .card__details {
+    padding: 1rem 3rem;
+  }
+  .card__cta {
+    position: relative;
+    top: 0%;
+    left: 0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    width: 100%;
+    padding: 7rem 4rem 4rem 4rem;
+  }
+  .card__price-box {
+    margin-bottom: 3rem;
+  }
+  .card__price-value {
+    font-size: 4rem;
+  }
 }
 
 .form__group:not(:last-child) {
@@ -508,6 +532,12 @@ body {
   display: block;
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+
+@media (max-width: 56.25em) {
+  .form__input {
+    width: 75%;
+  }
 }
 
 .form__input:focus {
@@ -545,6 +575,13 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block;
+}
+
+@media (max-width: 56.25em) {
+  .form__radio-group {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 .form__radio-input {
@@ -603,6 +640,21 @@ body {
           transform: skewX(-12deg);
 }
 
+@media (max-width: 56.25em) {
+  .story {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 9rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .story {
+    -webkit-transform: skewX(0);
+            transform: skewX(0);
+  }
+}
+
 .story > * {
   -webkit-transform: skewX(12deg);
           transform: skewX(12deg);
@@ -620,6 +672,13 @@ body {
   position: relative;
 }
 
+@media (max-width: 37.5em) {
+  .story__shape {
+    -webkit-transform: translateX(-3rem) skewX(0);
+            transform: translateX(-3rem) skewX(0);
+  }
+}
+
 .story__img {
   height: 100%;
   -webkit-transform: translateX(-4rem) scale(1.2);
@@ -633,6 +692,13 @@ body {
 .story__text {
   -webkit-transform: skewX(12deg);
           transform: skewX(12deg);
+}
+
+@media (max-width: 37.5em) {
+  .story__text {
+    -webkit-transform: skewX(0);
+            transform: skewX(0);
+  }
 }
 
 .story__caption {
@@ -1429,11 +1495,36 @@ body {
   border-radius: 3px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  height: 50rem;
+}
+
+@media (max-width: 75em) {
+  .book {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 65%, transparent 65%), url(/img/nat-10.jpg);
+    background-size: cover;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .book {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(/img/nat-10.jpg);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(/img/nat-10.jpg);
+  }
 }
 
 .book__form {
   width: 50%;
   padding: 6rem;
+}
+
+@media (max-width: 75em) {
+  .book__form {
+    width: 65%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .book__form {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
